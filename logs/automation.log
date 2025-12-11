@@ -1,0 +1,57 @@
+2025-11-15 11:08:22 INFO  AutomationLog - Navigated to URL: https://www.saucedemo.com/
+2025-11-15 11:08:22 INFO  AutomationLog - Starting Sauce Labs Login Test
+2025-11-15 11:08:23 INFO  AutomationLog - Entering username
+2025-11-15 11:08:25 INFO  AutomationLog - Entering password
+2025-11-15 11:08:26 INFO  AutomationLog - Clicking login button
+2025-11-15 11:08:30 INFO  AutomationLog - Login successful
+2025-11-15 11:08:30 INFO  AutomationLog - Browser closed
+2025-11-15 11:18:43 INFO  AutomationLog - ===== Test Suite Started =====
+2025-11-15 11:18:55 INFO  AutomationLog - Navigated to URL: https://www.saucedemo.com/
+2025-11-15 11:18:55 INFO  AutomationLog - ===== Starting Test: loginTest =====
+2025-11-15 11:18:55 INFO  AutomationLog - Starting Sauce Labs Login Test
+2025-11-15 11:18:56 INFO  AutomationLog - Entering username
+2025-11-15 11:18:58 INFO  AutomationLog - Entering password
+2025-11-15 11:18:59 INFO  AutomationLog - Clicking login button
+2025-11-15 11:19:03 ERROR AutomationLog - Test failed: loginTest
+2025-11-15 11:19:03 INFO  AutomationLog - Browser closed
+2025-11-15 11:19:04 INFO  AutomationLog - ===== Test Suite Finished =====
+2025-11-15 12:45:13 INFO  AutomationLog - ===== Test Suite Started =====
+2025-11-15 12:45:25 INFO  AutomationLog - Navigated to URL: https://www.saucedemo.com/
+2025-11-15 12:45:25 INFO  AutomationLog - ===== Starting Test: loginTest =====
+2025-11-15 12:45:26 INFO  AutomationLog - Starting Sauce Labs Login Test
+2025-11-15 12:45:26 INFO  AutomationLog - Entering username
+2025-11-15 12:45:29 INFO  AutomationLog - Entering password
+2025-11-15 12:45:30 INFO  AutomationLog - Clicking login button
+2025-11-15 12:45:34 ERROR AutomationLog - Test failed: loginTest
+2025-11-15 12:45:34 INFO  AutomationLog - Browser closed
+2025-11-15 12:45:35 INFO  AutomationLog - ===== Test Suite Finished =====
+2025-11-15 12:50:18 INFO  AutomationLog - ===== Test Suite Started =====
+2025-11-15 12:50:30 INFO  AutomationLog - Navigated to URL: https://www.saucedemo.com/
+2025-11-15 12:50:30 INFO  AutomationLog - ===== Starting Test: loginTest =====
+2025-11-15 12:50:30 INFO  AutomationLog - Starting Sauce Labs Login Test
+2025-11-15 12:50:31 INFO  AutomationLog - Entering username
+2025-11-15 12:50:34 INFO  AutomationLog - Entering password
+2025-11-15 12:50:35 INFO  AutomationLog - Clicking login button
+2025-11-15 12:50:38 INFO  AutomationLog - Login successful
+2025-11-15 12:50:38 INFO  AutomationLog - Browser closed
+2025-11-15 12:50:39 INFO  AutomationLog - ===== Test Suite Finished =====
+2025-11-15 12:51:27 INFO  AutomationLog - ===== Test Suite Started =====
+2025-11-15 12:51:37 INFO  AutomationLog - Navigated to URL: https://www.saucedemo.com/
+2025-11-15 12:51:37 INFO  AutomationLog - ===== Starting Test: loginTest =====
+2025-11-15 12:51:37 INFO  AutomationLog - Starting Sauce Labs Login Test
+2025-11-15 12:51:38 INFO  AutomationLog - Entering username
+2025-11-15 12:51:40 INFO  AutomationLog - Entering password
+2025-11-15 12:51:41 INFO  AutomationLog - Clicking login button
+2025-11-15 12:51:45 INFO  AutomationLog - Login successful
+2025-11-15 12:51:45 INFO  AutomationLog - Browser closed
+2025-11-15 12:51:45 INFO  AutomationLog - ===== Test Suite Finished =====
+2025-11-20 08:39:15 INFO  AutomationLog - ===== Test Suite Started =====
+2025-11-20 08:39:25 INFO  AutomationLog - Navigated to URL: https://www.saucedemo.com/
+2025-11-20 08:39:25 INFO  AutomationLog - ===== Starting Test: loginTest =====
+2025-11-20 08:39:25 INFO  AutomationLog - Starting Sauce Labs Login Test
+2025-11-20 08:39:25 INFO  AutomationLog - Entering username
+2025-11-20 08:39:25 INFO  AutomationLog - Entering password
+2025-11-20 08:39:26 INFO  AutomationLog - Clicking login button
+2025-11-20 08:39:26 INFO  AutomationLog - Login successful
+2025-11-20 08:39:26 INFO  AutomationLog - Browser closed
+2025-11-20 08:39:26 INFO  AutomationLog - ===== Test Suite Finished =====

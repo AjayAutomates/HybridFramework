@@ -1,0 +1,5 @@
+utils/ConfigReader.class
+pageobjects/demoqaformPage.class
+pageobjects/LoginPage.class
+utils/ExcelUtil.class
+base/BaseTest.class
