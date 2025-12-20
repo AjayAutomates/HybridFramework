@@ -4,11 +4,11 @@
   <test name="SmokeTests">
     <groups>
       <run>
-        <include name="smoke"/>
+        <include name="regression"/>
       </run>
     </groups>
     <classes>
-      <class name="seleniumuitests.applaunchTest"/>
+      <class name="InterviewPrepTestNGTest.groupingTest"/>
     </classes>
   </test>
 </suite>

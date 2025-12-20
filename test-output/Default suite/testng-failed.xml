@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="InterviewPrepUITests.WindowHandlingTest">
+      <class name="InterviewPrepTestNGTest.annotationrealusageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="handleNewWindow"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="loginTest_ValidUser"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="loginTest_InvalidUser"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- InterviewPrepUITests.WindowHandlingTest -->
+      </class> <!-- InterviewPrepTestNGTest.annotationrealusageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

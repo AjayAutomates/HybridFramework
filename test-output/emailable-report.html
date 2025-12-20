@@ -8,18 +8,29 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Parallel Suite</th></tr>
-<tr><td><a href="#t0">Chrome2 Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,743</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Chrome1 Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,721</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Chrome Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,854</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">48,318</th><th colspan="2"></th></tr>
+<tr><th colspan="8">SauceDemo Suite</th></tr>
+<tr><td><a href="#t0">QA Environment</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,486</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome2 Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">InterviewPrepUITests.LaunchAppTest</td><td><a href="#m0">verifyPageTitle</a></td><td rowspan="1">1766215655435</td><td rowspan="1">428</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Chrome1 Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">InterviewPrepUITests.DropdownTest</td><td><a href="#m1">handleDropdownTest</a></td><td rowspan="1">1766215658020</td><td rowspan="1">2838</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">InterviewPrepUITests.AlertTest</td><td><a href="#m2">alertverificationTest</a></td><td rowspan="1">1766215661138</td><td rowspan="1">5847</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceDemo Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">QA Environment &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">InterviewPrepTestNGTest.parametersnewtest</td><td><a href="#m0">launchapp</a></td><td rowspan="1">1766227285276</td><td rowspan="1">7465</td></tr></tbody>
 </table>
-<h2>Chrome2 Test</h2><h3 id="m0">InterviewPrepUITests.LaunchAppTest#verifyPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Chrome1 Test</h2><h3 id="m1">InterviewPrepUITests.DropdownTest#handleDropdownTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Chrome Test</h2><h3 id="m2">InterviewPrepUITests.AlertTest#alertverificationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>QA Environment</h2><h3 id="m0">InterviewPrepTestNGTest.parametersnewtest#launchapp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>chrome</td><td>qa</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=143.0.7499.170)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47d0d313e4b881e12a3c0a608ce4575a, get {url=https://qa.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/pr/m95hplts5p3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50911}, goog:processID: 2715, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50911/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47d0d313e4b881e12a3c0a608ce4575a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at InterviewPrepTestNGTest.parametersnewtest.launchapp(parametersnewtest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

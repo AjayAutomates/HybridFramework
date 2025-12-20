@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class groupingTest {
 	
-	@Test(enabled=true, groups= {"smoke"})
+	@Test(enabled=true, groups= {"smoke","region","pagename"})
 	public void login3()
 	
 	{

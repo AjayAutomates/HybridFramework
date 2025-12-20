@@ -3,7 +3,7 @@
 <suite name="SauceDemo Suite">
   <test name="QA Environment">
     <parameter name="browser" value="chrome"/>
-    <parameter name="env" value="prod"/>
+    <parameter name="env" value="qa"/>
     <classes>
       <class name="InterviewPrepTestNGTest.parametersnewtest"/>
     </classes>

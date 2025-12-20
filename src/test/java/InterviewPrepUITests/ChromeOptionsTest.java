@@ -15,10 +15,8 @@ import java.util.Map;
 public class ChromeOptionsTest {
 
 	 WebDriver driver;
-
 	    @BeforeMethod
 	    public void setUp() {
-
 	        // 1. ChromeOptions configuration
 	        ChromeOptions options = new ChromeOptions();
 
