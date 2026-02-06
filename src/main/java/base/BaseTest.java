@@ -11,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
@@ -64,7 +65,19 @@ public class BaseTest {
         // Browser setup with WebDriverManager
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless=new");
+
+            // Stability options (Recommended for CI/CD)
+            options.addArguments("--disable-gpu");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+
+            // Optional but recommended
+            options.addArguments("--window-size=1920,1080");
             driver = new ChromeDriver();
+
+            driver = new ChromeDriver(options);
 
         } else if (browser.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
@@ -121,10 +134,8 @@ public class BaseTest {
 
             // Capture screenshot (file)
             String filePath = takeScreenshot(result.getName());
-
             // Capture Base64 screenshot (best for HTML report)
             String base64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
-
             test.fail("Test Failed: " + result.getThrowable());
             test.addScreenCaptureFromPath(filePath);  // physical file
             test.addScreenCaptureFromBase64String(base64); // Base64 attachment
