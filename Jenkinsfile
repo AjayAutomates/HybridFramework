@@ -32,3 +32,20 @@ pipeline {
         }
     }
 }
+post {
+    success {
+        emailext(
+            subject: "SUCCESS: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+            body: "Build Passed ✅\nCheck details: ${env.BUILD_URL}",
+            to: "your-email@gmail.com"
+        )
+    }
+
+    failure {
+        emailext(
+            subject: "FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+            body: "Build Failed ❌\nCheck details: ${env.BUILD_URL}",
+            to: "your-email@gmail.com"
+        )
+    }
+}
