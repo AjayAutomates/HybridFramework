@@ -75,8 +75,6 @@ public class BaseTest {
 
             // Optional but recommended
             options.addArguments("--window-size=1920,1080");
-            driver = new ChromeDriver();
-
             driver = new ChromeDriver(options);
 
         } else if (browser.equalsIgnoreCase("edge")) {
@@ -139,7 +137,6 @@ public class BaseTest {
             test.fail("Test Failed: " + result.getThrowable());
             test.addScreenCaptureFromPath(filePath);  // physical file
             test.addScreenCaptureFromBase64String(base64); // Base64 attachment
-
             log.error("Test failed: " + result.getName());
         }
     }
