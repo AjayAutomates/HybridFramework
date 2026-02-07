@@ -30,4 +30,11 @@ public class SauceLabsLoginTest extends BaseTest {
         test.pass("Login successful");
         log.info("Login successful");
     }
+    
+    @Test
+    public void sampletest1() {
+    	test = extent.createTest("Sauce Labs Login Test2");
+        log.info("Starting Sauce Labs Login Test");
+        System.out.println("sample test case");
+}
 }
