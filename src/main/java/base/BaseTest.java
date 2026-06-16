@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -64,18 +66,24 @@ public class BaseTest {
 
         // Browser setup with WebDriverManager
         if (browser.equalsIgnoreCase("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless=new");
-
-            // Stability options (Recommended for CI/CD)
-            options.addArguments("--disable-gpu");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-
-            // Optional but recommended
-            options.addArguments("--window-size=1920,1080");
-            driver = new ChromeDriver(options);
+            //WebDriverManager.chromedriver().setup();
+        	ChromeOptions options = new ChromeOptions();
+        	// 🔥 Disable password manager properly
+        	Map<String, Object> prefs = new HashMap<>();
+        	prefs.put("credentials_enable_service", false);
+        	prefs.put("profile.password_manager_enabled", false);
+        	prefs.put("profile.password_manager_leak_detection", false);
+        	options.setExperimentalOption("prefs", prefs);
+        	// Your existing options
+        	options.addArguments("--disable-notifications");
+        	options.addArguments("--disable-infobars");
+        	options.addArguments("--disable-extensions");
+        	// Stability options
+        	options.addArguments("--disable-gpu");
+        	options.addArguments("--no-sandbox");
+        	options.addArguments("--disable-dev-shm-usage");
+        	options.addArguments("--window-size=1920,1080");
+        	driver = new ChromeDriver(options);
 
         } else if (browser.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
@@ -125,7 +133,7 @@ public class BaseTest {
     //==========================================================
     //           ADD SCREENSHOT TO EXTENT ON FAILURE
     //==========================================================
-    @AfterMethod
+   /* @AfterMethod
     public void tearDownMethod(ITestResult result) {
 
         if (result.getStatus() == ITestResult.FAILURE) {
@@ -140,7 +148,7 @@ public class BaseTest {
             log.error("Test failed: " + result.getName());
         }
     }
-
+*/
     //==========================================================
     //                 CLOSE BROWSER
     //==========================================================

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SauceLabsLoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.dashboardTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.dashboardTest" class="method navigator-link" hash-for-method="verifyAddToCartUpdatesCartBadge">verifyAddToCartUpdatesCartBadge</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.dashboardTest" class="method navigator-link" hash-for-method="verifyDashboardUIElementsVisibility">verifyDashboardUIElementsVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.dashboardTest" class="method navigator-link" hash-for-method="verifyLogoutloginissuccessful">verifyLogoutloginissuccessful</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.dashboardTest" class="method navigator-link" hash-for-method="verifyProductsAreDisplayedOnDashboard">verifyProductsAreDisplayedOnDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.dashboardTest" class="method navigator-link" hash-for-method="verifyUserNavigatesToProductDetailsPage">verifyUserNavigatesToProductDetailsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,7 +146,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.SauceLabsLoginTest</span>
+              <span class="class-name">tests.dashboardTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -129,6 +154,41 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddToCartUpdatesCartBadge">
+                  </a> <!-- verifyAddToCartUpdatesCartBadge -->
+                  <span class="method-name">verifyAddToCartUpdatesCartBadge</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashboardUIElementsVisibility">
+                  </a> <!-- verifyDashboardUIElementsVisibility -->
+                  <span class="method-name">verifyDashboardUIElementsVisibility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutloginissuccessful">
+                  </a> <!-- verifyLogoutloginissuccessful -->
+                  <span class="method-name">verifyLogoutloginissuccessful</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductsAreDisplayedOnDashboard">
+                  </a> <!-- verifyProductsAreDisplayedOnDashboard -->
+                  <span class="method-name">verifyProductsAreDisplayedOnDashboard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserNavigatesToProductDetailsPage">
+                  </a> <!-- verifyUserNavigatesToProductDetailsPage -->
+                  <span class="method-name">verifyUserNavigatesToProductDetailsPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,9 +203,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;base.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.SauceLabsLoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.dashboardTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -185,16 +248,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'tests.SauceLabsLoginTest')
-data.setCell(0, 3, 708);
+data.setCell(0, 1, 'verifyAddToCartUpdatesCartBadge')
+data.setCell(0, 2, 'tests.dashboardTest')
+data.setCell(0, 3, 8181);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUserNavigatesToProductDetailsPage')
+data.setCell(1, 2, 'tests.dashboardTest')
+data.setCell(1, 3, 6161);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLogoutloginissuccessful')
+data.setCell(2, 2, 'tests.dashboardTest')
+data.setCell(2, 3, 6152);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyProductsAreDisplayedOnDashboard')
+data.setCell(3, 2, 'tests.dashboardTest')
+data.setCell(3, 3, 5061);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTest')
+data.setCell(4, 2, 'tests.dashboardTest')
+data.setCell(4, 3, 1053);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyDashboardUIElementsVisibility')
+data.setCell(5, 2, 'tests.dashboardTest')
+data.setCell(5, 3, 70);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 708 ms</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -220,34 +303,94 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.SauceLabsLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.dashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">122 ms</span>
+                <span class="method-start">119 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">createExtentTest(public void tests.SauceLabsLoginTest.loginTest())</span>
-                <span class="method-start">10354 ms</span>
+                <span class="method-name">createExtentTest(public void tests.dashboardTest.loginTest())</span>
+                <span class="method-start">10585 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPage</span>
+                <span class="method-start">10598 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">10362 ms</span>
+                <span class="method-start">10599 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=loginTest status=SUCCESS method=SauceLabsLoginTest.loginTest()[pri:0, instance:test...)</span>
-                <span class="method-start">11071 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.dashboardTest.verifyProductsAreDisplayedOnDashboard() throws java.lang.Interrupted...)</span>
+                <span class="method-start">11655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductsAreDisplayedOnDashboard</span>
+                <span class="method-start">11656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPage</span>
+                <span class="method-start">11656 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPage</span>
+                <span class="method-start">16719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.dashboardTest.verifyAddToCartUpdatesCartBadge() throws java.lang.InterruptedExcept...)</span>
+                <span class="method-start">16719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddToCartUpdatesCartBadge</span>
+                <span class="method-start">16720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.dashboardTest.verifyUserNavigatesToProductDetailsPage() throws java.lang.Interrupt...)</span>
+                <span class="method-start">24906 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPage</span>
+                <span class="method-start">24907 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserNavigatesToProductDetailsPage</span>
+                <span class="method-start">24908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.dashboardTest.verifyDashboardUIElementsVisibility())</span>
+                <span class="method-start">31073 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPage</span>
+                <span class="method-start">31074 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDashboardUIElementsVisibility</span>
+                <span class="method-start">31075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.dashboardTest.verifyLogoutloginissuccessful() throws java.lang.InterruptedExceptio...)</span>
+                <span class="method-start">31146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPage</span>
+                <span class="method-start">31146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoutloginissuccessful</span>
+                <span class="method-start">31147 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">11074 ms</span>
+                <span class="method-start">37301 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">11217 ms</span>
+                <span class="method-start">45198 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

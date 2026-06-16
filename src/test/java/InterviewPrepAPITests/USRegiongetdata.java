@@ -24,6 +24,5 @@ public class USRegiongetdata {
 	            //equalTo(5) → Checks that the array contains exactly 5 items.
 	            .body("[0].title", notNullValue())  // Validate first product has a title
 	            .log().all();// Logs the entire HTTP response in the console.
-
 }
 }

@@ -26,7 +26,7 @@ public class SauceLabsLoginTest extends BaseTest {
         log.info("Clicking login button");
         login.clickLogin();
         // Validation
-        AssertJUnit.assertEquals(driver.getTitle(), "Swag Labs");
+        Assert.assertEquals(driver.getTitle(), "Swag Labs");
         test.pass("Login successful");
         log.info("Login successful");
     }

@@ -3,18 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="InterviewPrepTestNGTest.annotationrealusageTest">
+      <class name="tests.SQLDBTest">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="loginTest_ValidUser"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="loginTest_InvalidUser"/>
-          <include name="beforeClass"/>
+          <include name="validateTransaction"/>
         </methods>
-      </class> <!-- InterviewPrepTestNGTest.annotationrealusageTest -->
+      </class> <!-- tests.SQLDBTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

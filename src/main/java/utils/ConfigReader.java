@@ -1,25 +1,23 @@
 package utils;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
+
 public class ConfigReader {
 
-    static Properties prop;
+    private static Properties prop;
 
-    static { //A static block executes only once when the class is loaded (before any method calls).
-        try {
-        	//open file to read values
-            FileInputStream fis = new FileInputStream("src/main/resources/config.properties");
-            //hold key-value pairs from the properties file.
+    static {
+        try (FileInputStream fis = new FileInputStream("src/main/resources/config.properties")) {
             prop = new Properties();
-            //This loads all values from the file into memory.
             prop.load(fis);
-        } catch (Exception e) { e.printStackTrace(); }
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to load config.properties", e);
+        }
     }
 
     public static String getProperty(String key){
         return prop.getProperty(key);
-        //Accepts a key (like "url", "browser", "username").
-        //Returns the value from config.properties.
     }
 }

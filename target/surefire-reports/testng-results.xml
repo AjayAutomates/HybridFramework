@@ -1,55 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-20T08:39:15 IST" name="Suite" finished-at="2025-11-20T08:39:26 IST" duration-ms="11096">
+  <suite started-at="2026-04-29T08:29:48 IST" name="Suite" finished-at="2026-04-29T08:30:33 IST" duration-ms="44823">
     <groups>
     </groups>
-    <test started-at="2025-11-20T08:39:15 IST" name="Test" finished-at="2025-11-20T08:39:26 IST" duration-ms="11096">
-      <class name="tests.SauceLabsLoginTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2]" started-at="2025-11-20T08:39:15 IST" name="startReport" finished-at="2025-11-20T08:39:15 IST" duration-ms="114" status="PASS">
+    <test started-at="2026-04-29T08:29:48 IST" name="Test" finished-at="2026-04-29T08:30:33 IST" duration-ms="44823">
+      <class name="tests.dashboardTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:48 IST" name="startReport" finished-at="2026-04-29T08:29:48 IST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2]" started-at="2025-11-20T08:39:15 IST" name="setup" finished-at="2025-11-20T08:39:25 IST" duration-ms="10224" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:48 IST" name="setup" finished-at="2026-04-29T08:29:58 IST" duration-ms="10447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2]" started-at="2025-11-20T08:39:25 IST" name="createExtentTest" finished-at="2025-11-20T08:39:25 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:58 IST" name="createExtentTest" finished-at="2026-04-29T08:29:58 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.SauceLabsLoginTest.loginTest()]]>
+                <![CDATA[public void tests.dashboardTest.loginTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="loginTest()[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2]" started-at="2025-11-20T08:39:25 IST" name="loginTest" finished-at="2025-11-20T08:39:26 IST" duration-ms="708" status="PASS">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:58 IST" name="setupPage" finished-at="2026-04-29T08:29:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="loginTest()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:58 IST" name="loginTest" finished-at="2026-04-29T08:29:59 IST" duration-ms="1053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2]" started-at="2025-11-20T08:39:26 IST" name="tearDownMethod" finished-at="2025-11-20T08:39:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:59 IST" name="createExtentTest" finished-at="2026-04-29T08:29:59 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=SauceLabsLoginTest.loginTest()[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2] output={null}]]]>
+                <![CDATA[public void tests.dashboardTest.verifyProductsAreDisplayedOnDashboard() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2]" started-at="2025-11-20T08:39:26 IST" name="closeBrowser" finished-at="2025-11-20T08:39:26 IST" duration-ms="135" status="PASS">
+        </test-method> <!-- createExtentTest -->
+        <test-method signature="verifyProductsAreDisplayedOnDashboard()[pri:1, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:59 IST" name="verifyProductsAreDisplayedOnDashboard" finished-at="2026-04-29T08:30:04 IST" duration-ms="5061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductsAreDisplayedOnDashboard -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:29:59 IST" name="setupPage" finished-at="2026-04-29T08:29:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:04 IST" name="setupPage" finished-at="2026-04-29T08:30:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:04 IST" name="createExtentTest" finished-at="2026-04-29T08:30:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.dashboardTest.verifyAddToCartUpdatesCartBadge() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method signature="verifyAddToCartUpdatesCartBadge()[pri:2, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:04 IST" name="verifyAddToCartUpdatesCartBadge" finished-at="2026-04-29T08:30:13 IST" duration-ms="8181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCartUpdatesCartBadge -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:13 IST" name="createExtentTest" finished-at="2026-04-29T08:30:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.dashboardTest.verifyUserNavigatesToProductDetailsPage() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:13 IST" name="setupPage" finished-at="2026-04-29T08:30:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="verifyUserNavigatesToProductDetailsPage()[pri:3, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:13 IST" name="verifyUserNavigatesToProductDetailsPage" finished-at="2026-04-29T08:30:19 IST" duration-ms="6161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNavigatesToProductDetailsPage -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:19 IST" name="createExtentTest" finished-at="2026-04-29T08:30:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.dashboardTest.verifyDashboardUIElementsVisibility()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:19 IST" name="setupPage" finished-at="2026-04-29T08:30:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="verifyDashboardUIElementsVisibility()[pri:4, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:19 IST" name="verifyDashboardUIElementsVisibility" finished-at="2026-04-29T08:30:19 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardUIElementsVisibility -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:19 IST" name="createExtentTest" finished-at="2026-04-29T08:30:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.dashboardTest.verifyLogoutloginissuccessful() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:19 IST" name="setupPage" finished-at="2026-04-29T08:30:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="verifyLogoutloginissuccessful()[pri:5, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:19 IST" name="verifyLogoutloginissuccessful" finished-at="2026-04-29T08:30:25 IST" duration-ms="6152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutloginissuccessful -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:25 IST" name="closeBrowser" finished-at="2026-04-29T08:30:33 IST" duration-ms="7633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.SauceLabsLoginTest@3e2e18f2]" started-at="2025-11-20T08:39:26 IST" name="flushReport" finished-at="2025-11-20T08:39:26 IST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.dashboardTest@1cbbffcd]" started-at="2026-04-29T08:30:33 IST" name="flushReport" finished-at="2026-04-29T08:30:33 IST" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- tests.SauceLabsLoginTest -->
+      </class> <!-- tests.dashboardTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

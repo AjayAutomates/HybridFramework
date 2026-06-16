@@ -1,5 +1,12 @@
-utils/ConfigReader.class
 pageobjects/demoqaformPage.class
+pageobjects/dashboardPage.class
+pageobjects/adduserPage.class
+pojo/User.class
+pojo/UserResponse.class
+specs/SpecBuilder.class
+utils/ConfigReader.class
+base/TestListener.class
 pageobjects/LoginPage.class
+base/ApiBaseTest.class
 utils/ExcelUtil.class
 base/BaseTest.class

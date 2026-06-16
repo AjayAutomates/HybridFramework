@@ -22,16 +22,16 @@ public class ScrolltoElement {
 	    @Test
 	    public void scrollToOnesieProduct() throws InterruptedException {
 
-	        // 1️⃣ Login
+	        //  Login
 	        driver.findElement(By.id("user-name")).sendKeys("standard_user");
 	        driver.findElement(By.id("password")).sendKeys("secret_sauce");
 	        driver.findElement(By.id("login-button")).click();
 
-	        // 2️⃣ Locate Sauce Labs Onesie product
+	        //  Locate Sauce Labs Onesie product
 	        WebElement onesieProduct = driver.findElement(
 	                By.xpath("//div[text()='Sauce Labs Onesie']"));
 
-	        // 3️⃣ Scroll to the product using JavaScriptExecutor
+	        //️⃣ Scroll to the product using JavaScriptExecutor
 	        ((JavascriptExecutor) driver)
 	                .executeScript("arguments[0].scrollIntoView(true);", onesieProduct);
 

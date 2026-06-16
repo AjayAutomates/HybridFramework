@@ -13,56 +13,89 @@ import java.net.URL;
 import java.util.List;
 
 public class brokenlinksTest {
-	 WebDriver driver;
 
-	    @BeforeMethod
-	    public void setUp() {
-	        driver = new ChromeDriver();
-	        driver.get("https://www.amazon.in/");
-	    }
+    WebDriver driver;
 
-	    @Test
-	    public void verifyBrokenLinks() {
+    @BeforeMethod
+    public void setUp() {
 
-	        // Get all anchor tags
-	        List<WebElement> links = driver.findElements(By.tagName("a"));
-	        System.out.println("Total links found: " + links.size());
+        driver = new ChromeDriver();
 
-	        for (WebElement link : links) {
+        driver.manage().window().maximize();
 
-	            String url = link.getAttribute("href");
+        driver.get("https://www.google.in/");
+    }
 
-	            // Skip empty or javascript links
-	            if (url == null || url.isEmpty() || url.startsWith("javascript")) {
-	                continue;
-	            }
+    @Test
+    public void verifyBrokenLinks() {
 
-	            try {
-	                HttpURLConnection connection =
-	                        (HttpURLConnection) new URL(url).openConnection();
+        // Get all anchor tags
+        List<WebElement> links =
+                driver.findElements(By.tagName("a"));
 
-	                connection.setConnectTimeout(5000);
-	                connection.connect();
+        System.out.println("Total links found: "
+                + links.size());
 
-	                int responseCode = connection.getResponseCode();
+        // Normal For Loop
+        for (int i = 0; i < links.size(); i++) {
 
-	                if (responseCode >= 400) {
-	                    System.out.println("Broken Link: " + url +
-	                            " | Response Code: " + responseCode);
-	                } else {
-	                    System.out.println("Valid Link: " + url +
-	                            " | Response Code: " + responseCode);
-	                }
+            // Get href attribute
+            String url =
+                    links.get(i).getAttribute("href");
 
-	            } catch (Exception e) {
-	                System.out.println("⚠️ Exception for URL: " + url);
-	            }
-	        }
-	    }
+            // Skip null or empty links
+            if (url == null ||
+                    url.isEmpty() ||
+                    url.startsWith("javascript")) {
 
-	    @AfterMethod
-	    public void tearDown() {
-	        driver.quit();
-	    }
-	    
+                continue;
+            }
+
+            try {
+
+                // Create HTTP connection
+                HttpURLConnection connection =
+                        (HttpURLConnection)
+                                new URL(url).openConnection();
+
+                connection.setConnectTimeout(5000);
+
+                connection.connect();
+
+                // Get response code
+                int responseCode =
+                        connection.getResponseCode();
+
+                // Validate link
+                if (responseCode >= 400) {
+
+                    System.out.println(
+                            "Broken Link: "
+                                    + url
+                                    + " | Response Code: "
+                                    + responseCode);
+
+                } else {
+
+                    System.out.println(
+                            "Valid Link: "
+                                    + url
+                                    + " | Response Code: "
+                                    + responseCode);
+                }
+
+            } catch (Exception e) {
+
+                System.out.println(
+                        "Exception for URL: "
+                                + url);
+            }
+        }
+    }
+
+    @AfterMethod
+    public void tearDown() {
+
+        driver.quit();
+    }
 }

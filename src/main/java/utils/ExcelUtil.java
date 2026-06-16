@@ -10,6 +10,8 @@ public class ExcelUtil {
             // Load/open the file, allows java to read
             FileInputStream fis = new FileInputStream("src/main/resources/TestData.xlsx");
             //contains entire Excel file,contains all sheets inside it
+            //workbook -> sheets-> row and columns..cell values
+            //Workbook workbook = new XSSFWorkbook(fis);
             Workbook workbook = WorkbookFactory.create(fis);
             //this will go to the sheet inside excel
             Sheet sheet = workbook.getSheet(sheetName);
