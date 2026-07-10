@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-23T22:49:35 IST" name="Default suite" finished-at="2026-05-23T22:50:19 IST" duration-ms="44295">
+  <suite started-at="2026-06-30T08:08:10 IST" name="Default suite" finished-at="2026-06-30T08:08:12 IST" duration-ms="1599">
     <groups>
     </groups>
-    <test started-at="2026-05-23T22:49:35 IST" name="Default test" finished-at="2026-05-23T22:50:19 IST" duration-ms="44295">
-      <class name="InterviewPrepUITests.brokenlinksTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:InterviewPrepUITests.brokenlinksTest@10e31a9a]" started-at="2026-05-23T22:49:35 IST" name="setUp" finished-at="2026-05-23T22:49:56 IST" duration-ms="20846" status="PASS">
+    <test started-at="2026-06-30T08:08:10 IST" name="Default test" finished-at="2026-06-30T08:08:12 IST" duration-ms="1599">
+      <class name="InterviewPrepAPITests.POJOPostTest">
+        <test-method signature="createUserUsingPOJO()[pri:0, instance:InterviewPrepAPITests.POJOPostTest@5c5eefef]" started-at="2026-06-30T08:08:10 IST" name="createUserUsingPOJO" finished-at="2026-06-30T08:08:12 IST" duration-ms="1583" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBrokenLinks()[pri:0, instance:InterviewPrepUITests.brokenlinksTest@10e31a9a]" started-at="2026-05-23T22:49:56 IST" name="verifyBrokenLinks" finished-at="2026-05-23T22:50:19 IST" duration-ms="23310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBrokenLinks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:InterviewPrepUITests.brokenlinksTest@10e31a9a]" started-at="2026-05-23T22:50:19 IST" name="tearDown" finished-at="2026-05-23T22:50:19 IST" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- InterviewPrepUITests.brokenlinksTest -->
+        </test-method> <!-- createUserUsingPOJO -->
+      </class> <!-- InterviewPrepAPITests.POJOPostTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

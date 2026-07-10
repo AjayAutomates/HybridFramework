@@ -1,0 +1,19 @@
+***About the Framework***
+*** Hybrid Automation Framework for UI & API Testing***
+
+
+-->Developed using Java, Selenium, TestNG, Rest Assured, and Maven.
+-->Follows the Page Object Model (POM) design pattern for UI automation.
+-->Maven is used for dependency management through pom.xml.
+-->UI test data is maintained in Excel files.
+-->Application configurations are stored in Properties files.
+-->Reusable utility classes are provided to reduce code duplication.
+-->API automation is implemented using Rest Assured with POJO (Serialization & Deserialization).
+-->Organized package structure for easy maintenance and scalability.
+-->Includes a Java Programs package with commonly asked interview coding questions.
+-->Includes a TestNG Interview package covering important TestNG concepts.
+-->Includes an API Interview package with Rest Assured and POJO examples.
+-->Dedicated UI Practice package to build and practice your own automation scripts.
+-->Dedicated API Practice package for hands-on API automation practice.
+-->Beginner-friendly framework suitable for learning as well as real-time project implementation.
+-->Easy to extend by adding new pages, test cases, utilities, and APIs.
